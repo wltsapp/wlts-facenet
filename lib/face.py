@@ -18,8 +18,8 @@ modeldir = ''
 classifier_filename = './class/classifier.pkl'
 npy=''
 train_img="./train_img"
-
-def get_image_item(self, img_path):       
+class Predictor:
+	def get_image_item(self, img_path):       
 		with tf.Graph().as_default():
 			gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.6)
 			sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options, log_device_placement=False))
