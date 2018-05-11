@@ -14,7 +14,7 @@ from scipy import misc
 from packages import facenet, detect_face
 
 #img_path='abc.jpg'
-modeldir = ''
+modeldir = './model/20170511-185253.pb'
 classifier_filename = './class/classifier.pkl'
 npy=''
 train_img="./train_img"
