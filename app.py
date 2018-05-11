@@ -28,7 +28,7 @@ def upload():
     initialize()
     upfile = request.files["upfile"]
     img_file = "image" + str(random.randint(0, 999999)) + os.path.splitext(upfile.filename)[1]
-    img_path = os.path.join("/cache/", img_file)
+    img_path = os.path.join("./cache/", img_file)
     upfile.save(img_path)
     item = predictor.get_image_item(img_path)
     #os.remove(img_path)
