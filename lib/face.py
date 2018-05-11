@@ -20,7 +20,8 @@ npy=''
 train_img="./train_img"
 class Predictor:
 	def __init__(self):       
-        self.kinds = ["CAT", "DOG"]
+        	self.kinds = ["CAT", "DOG"]
+		
 	def get_image_item(self, img_path):       
 		with tf.Graph().as_default():
 			gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.6)
