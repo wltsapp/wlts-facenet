@@ -135,4 +135,6 @@ class Predictor:
 				 #pred = self.predict_images([img_path])[0]
 				 #prob, kind = self.get_prob_and_kind(pred)
 				 #item = dict(prob=prob, kind=kind)
-				return result_names
+				item = dict(prob=HumanNames, kind=best_class_indices)
+          			return item
+				
