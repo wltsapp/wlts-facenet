@@ -136,5 +136,5 @@ class Predictor:
 				 #prob, kind = self.get_prob_and_kind(pred)
 				 #item = dict(prob=prob, kind=kind)
 				item = dict(prob="12", kind="123")
-          			return item
+          		return item
 				
