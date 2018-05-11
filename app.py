@@ -16,7 +16,7 @@ def initialize():
     app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024 # 10MiB
     global predictor
     if not predictor:
-        predictor = nn.Predictor()
+        predictor = face.Predictor()
 
 @app.route('/')
 def index():
