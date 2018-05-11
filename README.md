@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Recognize Dogs and Cats
 
 This web service have a piece of softwarex (Convultional Neural Network) to recognize photos of dogs and cats and tells you whether the photo shows a dog or a cat.
@@ -16,3 +17,6 @@ Innumerable web pages that have helped me in the process of searching technical 
 
 ## License
 The software is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+=======
+# face-net
+>>>>>>> 6726f6e73feef527f04b1c32288b6af20987bbac
