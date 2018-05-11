@@ -3,6 +3,7 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+import random
 import pickle
 import sys
 import time
@@ -10,8 +11,15 @@ import time
 import cv2
 import numpy as np
 import tensorflow as tf
+from glob import glob
 from scipy import misc
 from packages import facenet, detect_face
+
+from keras.applications.vgg16 import VGG16
+from keras.models import Input, Model, Sequential
+from keras.layers import Dropout, Flatten, Dense
+from keras.preprocessing.image import load_img, img_to_array
+from pprint import pprint
 
 #img_path='abc.jpg'
 modeldir = ''
