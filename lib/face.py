@@ -98,6 +98,7 @@ class Predictor:
 							# inner exception
 							if bb[i][0] <= 0 or bb[i][1] <= 0 or bb[i][2] >= len(frame[0]) or bb[i][3] >= len(frame):
 								print('face is too close')
+								item = dict(prob='', kind='face is too close')
 								continue
 
 							cropped.append(frame[bb[i][1]:bb[i][3], bb[i][0]:bb[i][2], :])
