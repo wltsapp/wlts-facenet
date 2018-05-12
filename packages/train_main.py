@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 import sys
-from classifier import training
+from packages import classifier
 
 datadir = './pre_img'
 modeldir = './model/20170511-185253.pb'
