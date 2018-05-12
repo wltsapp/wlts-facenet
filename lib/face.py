@@ -135,7 +135,7 @@ class Predictor:
 
 				#if cv2.waitKey(1000000) & 0xFF == ord('q'):
 					#sys.exit("Thanks")
-				cv2.destroyAllWindows()
+				#cv2.destroyAllWindows()
 				 #pred = self.predict_images([img_path])[0]
 				 #prob, kind = self.get_prob_and_kind(pred)
 				 #item = dict(prob=prob, kind=kind)				
