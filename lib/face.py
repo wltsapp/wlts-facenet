@@ -48,7 +48,7 @@ class Predictor:
 				embeddings = tf.get_default_graph().get_tensor_by_name("embeddings:0")
 				phase_train_placeholder = tf.get_default_graph().get_tensor_by_name("phase_train:0")
 				embedding_size = embeddings.get_shape()[1]
-				print(embedding_size)
+				#print(embedding_size)
 
 				classifier_filename_exp = os.path.expanduser(classifier_filename)
 				with open(classifier_filename_exp, 'rb') as infile:
@@ -115,7 +115,7 @@ class Predictor:
 							# print(best_class_indices)
 							best_class_probabilities = predictions[np.arange(len(best_class_indices)), best_class_indices]
 							print(best_class_probabilities)
-							cv2.rectangle(frame, (bb[i][0], bb[i][1]), (bb[i][2], bb[i][3]), (0, 255, 0), 2)    #boxing face
+							#cv2.rectangle(frame, (bb[i][0], bb[i][1]), (bb[i][2], bb[i][3]), (0, 255, 0), 2)    #boxing face
 
 							#plot result idx under box
 							text_x = bb[i][0]
