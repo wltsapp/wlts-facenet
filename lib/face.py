@@ -126,17 +126,18 @@ class Predictor:
 								# print(H_i)
 								if HumanNames[best_class_indices[0]] == H_i:
 									result_names = HumanNames[best_class_indices[0]]
+									print(result_names)
+									item = dict(prob="12", kind=result_names)
 									cv2.putText(frame, result_names, (text_x, text_y), cv2.FONT_HERSHEY_COMPLEX_SMALL,
 												1, (0, 0, 255), thickness=1, lineType=2)
 					else:
 						print('Unable to align')
-				cv2.imshow('Image', frame)
+				#cv2.imshow('Image', frame)
 
-				if cv2.waitKey(1000000) & 0xFF == ord('q'):
-					sys.exit("Thanks")
-				cv2.destroyAllWindows()
+				#if cv2.waitKey(1000000) & 0xFF == ord('q'):
+					#sys.exit("Thanks")
+				#cv2.destroyAllWindows()
 				 #pred = self.predict_images([img_path])[0]
 				 #prob, kind = self.get_prob_and_kind(pred)
-				 #item = dict(prob=prob, kind=kind)
-				item = dict(prob="12", kind="123")
+				 #item = dict(prob=prob, kind=kind)				
 		return item			
