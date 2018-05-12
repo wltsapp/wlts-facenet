@@ -1,17 +1,14 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-
-import math
-import os
-import pickle
-
-import numpy as np
 import tensorflow as tf
+import numpy as np
+import facenet
+import os
+import math
+import pickle
 from sklearn.svm import SVC
-
-from packages import facenet
-
+import sys
 
 class training:
     def __init__(self, datadir, modeldir,classifier_filename):
