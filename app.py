@@ -23,6 +23,12 @@ def index():
     initialize()
     return render_template('index.html')
 
+@app.route('/train')
+def train():
+    initialize()
+    from packages import train_main
+    return render_template('index.html')
+    
 @app.route('/upload', methods=['POST'])
 def upload():
     initialize()
