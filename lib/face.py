@@ -11,7 +11,7 @@ import cv2
 import numpy as np
 import tensorflow as tf
 from scipy import misc
-from packages import facenet, detect_face
+from packages import facenet, detect_face, train_main
 
 #img_path='abc.jpg'
 modeldir = './models/20170511-185253.pb'
