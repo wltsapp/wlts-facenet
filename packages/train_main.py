@@ -5,7 +5,7 @@ import sys
 from packages import classifier
 
 datadir = './pre_img'
-modeldir = './model/20170511-185253.pb'
+modeldir = './models/20170511-185253.pb'
 classifier_filename = './class/classifier.pkl'
 print ("Training Start")
 obj=classifier.training(datadir,modeldir,classifier_filename)
