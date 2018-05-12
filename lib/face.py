@@ -121,13 +121,14 @@ class Predictor:
 							text_x = bb[i][0]
 							text_y = bb[i][3] + 20
 							print('Result Indices: ', best_class_indices[0])
+							best_class_indices[0]=3
 							print(HumanNames)
 							for H_i in HumanNames:
 								#print(HumanNames[best_class_indices[0]])
 								if HumanNames[best_class_indices[0]] == H_i:
 									result_names = HumanNames[best_class_indices[0]]
 									print(result_names)
-									item = dict(prob="12", kind=result_names)
+									item = dict(prob=best_class_probabilities, kind=result_names)
 									#cv2.putText(frame, result_names, (text_x, text_y), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255), thickness=1, lineType=2)
 					else:
 						print('Unable to align')
