@@ -48,7 +48,7 @@ class Predictor:
 				embeddings = tf.get_default_graph().get_tensor_by_name("embeddings:0")
 				phase_train_placeholder = tf.get_default_graph().get_tensor_by_name("phase_train:0")
 				embedding_size = embeddings.get_shape()[1]
-
+				print(embedding_size)
 
 				classifier_filename_exp = os.path.expanduser(classifier_filename)
 				with open(classifier_filename_exp, 'rb') as infile:
