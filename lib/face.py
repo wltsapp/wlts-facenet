@@ -123,12 +123,12 @@ class Predictor:
 							print('Result Indices: ', best_class_indices[0])
 							print(HumanNames)
 							for H_i in HumanNames:
-								# print(H_i)
+								print(H_i)
 								if HumanNames[best_class_indices[0]] == H_i:
 									result_names = HumanNames[best_class_indices[0]]
 									print(result_names)
-									item = dict(prob="12", kind=result_names)
-									cv2.putText(frame, result_names, (text_x, text_y), cv2.FONT_HERSHEY_COMPLEX_SMALL,
+									#item = dict(prob="12", kind=result_names)
+									#cv2.putText(frame, result_names, (text_x, text_y), cv2.FONT_HERSHEY_COMPLEX_SMALL,
 												1, (0, 0, 255), thickness=1, lineType=2)
 					else:
 						print('Unable to align')
