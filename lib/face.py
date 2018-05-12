@@ -123,7 +123,7 @@ class Predictor:
 							print('Result Indices: ', best_class_indices[0])
 							print(HumanNames)
 							for H_i in HumanNames:
-								print(H_i)
+								print(HumanNames[best_class_indices[0]])
 								if HumanNames[best_class_indices[0]] == H_i:
 									result_names = HumanNames[best_class_indices[0]]
 									print(result_names)
