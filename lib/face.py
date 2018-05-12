@@ -121,7 +121,7 @@ class Predictor:
 							text_x = bb[i][0]
 							text_y = bb[i][3] + 20
 							print('Result Indices: ', best_class_indices[0])
-							best_class_indices[0]=3
+							#best_class_indices[0]=3
 							print(HumanNames)
 							for H_i in HumanNames:
 								#print(HumanNames[best_class_indices[0]])
