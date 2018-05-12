@@ -1,22 +1,18 @@
-<<<<<<< HEAD
-# Recognize Dogs and Cats
+# Identify Images Using Facenet
 
-This web service have a piece of softwarex (Convultional Neural Network) to recognize photos of dogs and cats and tells you whether the photo shows a dog or a cat.
+This web service have a piece of softwarex (Facenet) to recognize photos.
+
 Your uploaded photos will be deleted immediately after the automatic recognition is done and never saved in the server.
 
-The photos used to train the neural network are acquired from a [Kaggle competition](https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition).
-
-Now the recognition accuracy has reached around 94% with VGG16 + fine tuning, which is fairly good, although there is still room for improvement.
-
 ## Usage
-Access to https://recognize-dogs-and-cats.herokuapp.com/.
+Access to https://face-ne.herokuapp.com/.
 
 ## Contributing
-Special thanks go to the development teams of Tensorflow, Keras, Flask and Kaggle.com.
+Special thanks go to the development teams of Tensorflow, Keras, Facenet, Flask and Kaggle.com.
 Innumerable web pages that have helped me in the process of searching technical information are also greatly appreciated.
 
 ## License
 The software is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 =======
-# face-net
+# face-ne
 >>>>>>> 6726f6e73feef527f04b1c32288b6af20987bbac
