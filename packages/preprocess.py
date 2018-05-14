@@ -5,8 +5,8 @@ from scipy import misc
 import os
 import tensorflow as tf
 import numpy as np
-import facenet
-import detect_face
+from packages import facenet
+from packages import detect_face
 
 class preprocesses:
     def __init__(self, input_datadir, output_datadir):
