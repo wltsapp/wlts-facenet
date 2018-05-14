@@ -49,6 +49,7 @@ def upload():
     img_path = os.path.join("./cache/", img_file)
     upfile.save(img_path)
     item = predictor.get_image_item(img_path)
+    print(img_path);
     os.remove(img_path)
     return json.dumps(item)
 
