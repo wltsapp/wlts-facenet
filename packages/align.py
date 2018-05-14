@@ -10,5 +10,5 @@ output_datadir = './pre_img'
 print ("Align Start")
 obj=preprocess.preprocesses(input_datadir,output_datadir)
 get_file=obj.collect_data()
-print('Aligned classifier model to file "%s"' % get_file)
+print('Aligned classifier model to file ')
 sys.exit("All Done")
