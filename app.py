@@ -25,7 +25,7 @@ def index():
 
 @app.route('/preprocess')
 def preprocess():    
-    from packages import preprocess
+    from packages import align
     return render_template('train.html')
 
 @app.route('/classifier')
