@@ -62,7 +62,7 @@ class Predictor:
 				prevTime = 0
 				# ret, frame = video_capture.read()
 				frame = cv2.imread(img_path,0)
-
+				print(img_path);
 				frame = cv2.resize(frame, (0,0), fx=0.5, fy=0.5)    #resize frame (optional)
 
 				curTime = time.time()+1    # calc fps
