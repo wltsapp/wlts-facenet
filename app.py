@@ -24,20 +24,17 @@ def index():
     return render_template('index.html')
 
 @app.route('/preprocess')
-def preprocess():
-    initialize()
+def preprocess():    
     from packages import preprocess
     return render_template('train.html')
 
 @app.route('/classifier')
-def classifier():
-    initialize()
+def classifier():    
     from packages import classifier
     return render_template('train.html')
 
 @app.route('/train')
-def train():
-    initialize()
+def train():    
     from packages import train_main
     return render_template('train.html')
     
