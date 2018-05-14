@@ -36,6 +36,8 @@ class training:
                 nrof_images = len(path)
                 nrof_batches_per_epoch = int(math.ceil(1.0 * nrof_images / batch_size))
                 emb_array = np.zeros((nrof_images, embedding_size))
+                print(nrof_batches_per_epoch)
+                print(emb_array)
                 for i in range(nrof_batches_per_epoch):
                     start_index = i * batch_size
                     end_index = min((i + 1) * batch_size, nrof_images)
