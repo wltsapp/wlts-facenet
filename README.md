@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Identify Images Using Facenet
 
 This web service have a piece of softwarex (Facenet) to recognize photos.
@@ -16,3 +17,6 @@ The software is available as open source under the terms of the [MIT License](ht
 =======
 # face-ne
 >>>>>>> 6726f6e73feef527f04b1c32288b6af20987bbac
+=======
+# wlts-facenet
+>>>>>>> 83b15715b36e51cb1fda7de69b008c8eca61b795
