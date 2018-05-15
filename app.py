@@ -33,7 +33,7 @@ def classifier():
     from packages import classifier
     return render_template('train.html')
 
-@app.route('/train')
+@app.route('/train', methods=['GET'])
 def train():    
     from packages import train_main
     return render_template('train.html')
