@@ -36,6 +36,8 @@ class training:
                 nrof_images = len(path)
                 nrof_batches_per_epoch = int(math.ceil(1.0 * nrof_images / batch_size))
                 emb_array = np.zeros((nrof_images, embedding_size))
+                print(nrof_batches_per_epoch)
+                print(emb_array)
                 for i in range(nrof_batches_per_epoch):
                     start_index = i * batch_size
                     end_index = min((i + 1) * batch_size, nrof_images)
@@ -45,15 +47,16 @@ class training:
                     emb_array[start_index:end_index, :] = sess.run(embeddings, feed_dict=feed_dict)
 
                 classifier_file_name = os.path.expanduser(self.classifier_filename)
-
+                print(classifier_file_name)
                 # Training Started
                 print('Training Started')
                 model = SVC(kernel='linear', probability=True)
                 model.fit(emb_array, label)
 
                 class_names = [cls.name.replace('_', ' ') for cls in img_data]
-
+                print(img_data)
                 # Saving model
                 with open(classifier_file_name, 'wb') as outfile:
                     pickle.dump((model, class_names), outfile)
+                    print(outfile)
                 return classifier_file_name

@@ -24,20 +24,17 @@ def index():
     return render_template('index.html')
 
 @app.route('/preprocess')
-def preprocess():
-    initialize()
-    from packages import preprocess
+def preprocess():    
+    from packages import align
     return render_template('train.html')
 
 @app.route('/classifier')
-def classifier():
-    initialize()
+def classifier():    
     from packages import classifier
     return render_template('train.html')
 
-@app.route('/train')
-def train():
-    initialize()
+@app.route('/train', methods=['GET'])
+def train():    
     from packages import train_main
     return render_template('train.html')
     
@@ -46,9 +43,9 @@ def upload():
     initialize()
     upfile = request.files["upfile"]
     img_file = "image" + str(random.randint(0, 999999)) + os.path.splitext(upfile.filename)[1]
-    img_path = os.path.join("./cache/", img_file)
-    upfile.save(img_path)
-    item = predictor.get_image_item(img_path)
+    img_path = os.path.join("./cache/", img_file)    
+    upfile.save(img_path)   
+    item = predictor.get_image_item(img_path)    
     os.remove(img_path)
     return json.dumps(item)
 

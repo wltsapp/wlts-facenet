@@ -15,6 +15,7 @@ def gather_threads():
  q.enqueue(run_gather_threads)
 
 def gather_comments():
+ from packages import train_main
  q.enqueue(run_gather_comments)
 
 sched.add_job(gather_comments) #enqueue right away once
